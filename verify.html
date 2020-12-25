@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>BlockyCode | reCAPTCHA</title>
+    <link rel=icon href=https://www.gstatic.com/images/icons/material/product/2x/recaptcha_48dp.png>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LfWqRQaAAAAANzesDOPmj5gkPv_FAjdwHUD6alr'
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <form action="" method="POST">
+      <div id="html_element"></div>
+    </form>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+      <button onclick='e()'>Continue</button>
+    <script>
+    function e() {
+        var a = location.search;
+        var b = a.replace('?to=')
+        location.replace('https://www.blockycode.cf/' + b)
+    }
+    </script>
+  </body>
+</html>
