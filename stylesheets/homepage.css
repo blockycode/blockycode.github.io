@@ -1,0 +1,18 @@
+.versions button {
+    cursor: pointer;
+    padding: 10 30;
+    font-family: 'Raleway', sans-serif;
+    background-color: darkgrey;
+    border-width: 10;
+    transition: 0.5s;
+    border-color: #458EBC #093F61 #093F61 #458EBC;
+}
+.versions button:hover {
+    background-color: aquamarine;
+    border-width: 0;
+    border-color: #458EBC #093F61 #093F61 #458EBC;
+    padding: 20 40;
+}
+html {
+  scroll-behavior: smooth;
+}
